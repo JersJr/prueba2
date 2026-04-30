@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Panamá Autoactualizable</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .status {
+            margin-top: 10px;
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+
+    <script>
+        // Auto recarga cada 60 segundos
+        setInterval(() => {
+            location.reload();
+        }, 60000);
+    </script>
+</head>
+<body>
+
+    <header>
+        Chat Panamá en Vivo
+    </header>
+
+    <div class="container">
+        <iframe 
+            src="https://chateamos.net/webchat/chat.php?nick=c0d3x&channel=panama">
+        </iframe>
+
+        <div class="status">
+            Esta página se actualiza automáticamente cada 60 segundos.
+        </div>
+    </div>
+
+</body>
+</html>
