@@ -24,14 +24,6 @@
             padding: 20px;
         }
 
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            border-radius: 8px;
-            background: white;
-        }
-
         .status {
             margin-top: 10px;
             text-align: center;
@@ -41,8 +33,8 @@
     </style>
 
     <script>
-        // Auto recarga cada 60 segundos
-        setInterval(() => {
+        // Auto-recarga cada 60 segundos
+        setInterval(function () {
             location.reload();
         }, 60000);
     </script>
@@ -54,13 +46,16 @@
     </header>
 
     <div class="container">
+
         <iframe 
-            src="https://chateamos.net/webchat/chat.php?nick=c0d3x&channel=panama">
+            src="https://www.chateamos.net/webchat/chat.php?nick=pago?&channel=panama" 
+            style="border:0; width:100%; height:400px;">
         </iframe>
 
         <div class="status">
             Esta página se actualiza automáticamente cada 60 segundos.
         </div>
+
     </div>
 
 </body>
